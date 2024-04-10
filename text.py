@@ -47,7 +47,7 @@ def lethel(text):
     alph = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+|-=\/"№;:?,.~`<>[]' + chr(0x007b) + chr(0x007d) + chr(39)
     res = ''
     for i in text:
-        f = open('biblia\lethelalph.hxf', 'r', -1, 'utf-8')
+        f = open('lethelalph.hxf', 'r', -1, 'utf-8')
         sel = (f.readlines()[alph.find(i)]).replace('\n', '')
         sym = sel[random.randint(0, len(sel)-1)]
         f.close()
